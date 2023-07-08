@@ -1,0 +1,505 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Maven Pro', sans-serif;
+}
+body,html{
+    width: 100%;
+    margin: auto;
+}
+
+/*Classes Auxiliares*/
+
+.clear{
+    clear: both;
+}
+.container{
+
+    max-width: 1280px;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+
+
+/*Site*/
+section.header-master{
+    width: 100%;
+    padding: 50px 0;
+    min-height: 900px;
+    background-image: url(../imagens/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+header{
+    margin-bottom: 80px;
+}
+div.logo{
+    float: left;
+    width: 220px;
+    height: 64px;
+    background-image: url(../imagens/logo_horizontal.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin: -20px 100px 10px 30px;
+}
+div.logo nav{
+    float: left;
+    padding: 0 15px;
+}
+header nav ul{
+    list-style-type: none;
+}
+header li {
+    color: rgba(0, 0, 0, 0.744);
+    display: inline-block;
+    font-size: 18px;
+    padding-left: 30px;
+}
+
+header li a{
+    color: inherit;
+    text-decoration: none;
+}
+li.selected{
+
+    position: relative;
+}
+li.selected span{
+    position: absolute;
+    bottom: -3px;
+    width: 50px;
+    height: 3px;
+    background-color: rgb(109, 206, 238);
+}
+.tel span{
+    color: rgba(0, 0, 0, 0.744);
+    font-size: 20px;
+    float: right;
+    padding: 0 50px;
+    margin-top: -23px;
+}
+
+
+/*Body*/
+.container-header{
+    padding: 60px 0;
+    min-width: 100%;
+}
+.content-header .one{
+    float: left;
+    width: 50%;
+}
+.one{
+    margin-top: 75px;
+}
+.one h2{
+    color: rgb(3, 100, 133);
+    font-weight: normal;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+.one p{
+    color: rgb(3, 100, 133);
+    text-align: justify;
+    margin-bottom: 20px;
+}
+.one span{
+    font-size: small;
+    color: rgb(3, 100, 133);
+}
+
+.one form input[type="email"]{
+    display: inline-block;
+    width: 400px;
+    border: 2px solid white;
+    border-radius: 10px;
+    height: 30px;
+    margin-bottom: 20px;
+}
+.one form input[type="email"]:focus{
+    outline: 0;
+    padding-left: 10px ;
+}
+.one form input[type="submit"]{
+    display: inline-block;
+    width: 50px;
+    border: 2px solid white;
+    border-radius: 10px;
+    height: 30px;
+    background-color: rgb(3, 100, 133);
+    color: white;
+    cursor: pointer;
+}
+.two{
+    float: left;
+    width: 50%;
+}
+.two div{
+    float: left;
+    width: 250px;
+    height: 250px;
+    background-color: red;
+    border-radius: 50%;
+    border: 10px solid whitesmoke;
+    margin-left: calc(5% - 20px);
+}
+
+.img1{
+    background-image: url(../imagens/new1.png);
+}
+.img2{
+    background-image: url(../imagens/new4.png);
+}
+.img3{
+    background-image: url(../imagens/new2.png);
+}
+.img4{
+    background-image: url(../imagens/new3.png);
+}
+
+/*Secao diferenciais*/
+section.diferenciais{
+    text-align: center;
+    width: 100%;
+    padding: 20px 0;
+    margin-bottom: 50px;
+
+}
+section.diferenciais > h2{
+    background-image: linear-gradient(white,rgba(109, 206, 238, 0.548));
+    padding: 15px;
+    color: rgb(3, 100, 133);
+    font-size: 3em;
+    margin-bottom: 25px;
+    width: 100%;
+}
+section.diferenciais > .container{
+    display: flex;
+}
+.diferenciais-single{
+    margin: 25px;
+    text-align: center;
+    color: rgb(3, 100, 133);
+}
+.diferenciais-single > div{
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    margin: 15px auto ;
+    border-radius: 50%;
+}
+
+/*Secao sobre*/
+.sobre-container{
+    float: left;
+}
+.sobre{
+    background-color: rgb(109, 206, 238);
+    background-image: url(../imagens/6.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    float: left;
+    width: 50%;
+}
+.sobre2{
+    float: left;
+    width: 50%;
+}
+.sobre2 h2{
+    text-align: left;
+    color: rgb(3, 100, 133);
+    font-size: 2em;
+    padding: 10px;
+}
+.sobre2 p{
+    text-align: justify;
+    color: rgb(109, 206, 238);
+    padding: 10px;
+}
+
+/*Depoimento*/
+section.depoimento{
+    background-color: rgba(3, 101, 133, 0.521);
+    min-height: 500px;
+    padding-top: 230px;
+    margin: auto;
+    width: 100%;
+}
+section.depoimento h2{
+    text-align: center;
+    color: rgba(3, 101, 133, 0.521);
+    font-size: 2em;
+    font-style: italic;
+    padding-bottom: 5px;
+}
+section.depoimento p{
+        text-align: right;
+        color: white;
+        padding-right: 230px;
+}
+
+
+/*Etapas*/
+
+/*Lado esquerdo*/
+section.etapas{
+    width: 100%;
+    padding: 40px 0;
+}
+section.etapas > h2{
+    text-align: center;
+    color: rgb(3, 100, 133);
+    font-size: 2em;
+}
+.container_left{
+    float: left;
+    width: 50%;
+}
+
+.etapas__single{
+    float: left;
+    width: 100%;
+}
+
+.etapas__single > div{
+    border-radius: 50%;
+    float: left;  
+}
+.etapa1{
+    width: 300px;
+    height: 300px;
+    background-image: url(../imagens/etapa1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 50px;
+}
+.etapa2{
+    width: 300px;
+    height: 300px;
+    background-image: url(../imagens/etapa2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 50px;
+}
+.etapa3{
+    width: 300px;
+    height: 300px;
+    background-image: url(../imagens/etapa3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 50px;
+}
+.etapas__single > p {
+    float: left;
+    padding-left: 10px;
+    padding-right: 50px;
+    padding-top: 50px;
+    width: 50%;
+    color: rgb(3, 100, 133);
+}
+
+/*Lado direito*/
+.container_right{
+    margin-top: 50px;
+    float: left;
+    width: 50%;
+}
+.container_right .circle{
+    float: left;
+    width: 100px;
+    height: 100px;
+    border: 3px solid rgb(109, 206, 238);
+    border-radius: 50%;
+    position: relative;
+    margin-top: 25px;
+    margin-bottom: 21px;
+}
+
+.circle span{
+    color: rgb(3, 100, 133);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.line{
+    position: absolute;
+    bottom: -50px;
+    right: 50%;
+    width: 5px;
+    height: 50px;
+    background-color:rgb(109, 206, 238);
+}
+.description{
+    width: calc(100% - 100px);
+    float: left;
+    padding: 20px;
+    text-align: justify;
+    color: rgb(3, 100, 133);
+}
+
+section.etapas > h2{
+    font-size: 1.2em;
+}
+
+
+/*Diferenças*/
+
+section.diferencas{
+    margin: 50px 0;
+    
+}
+section.diferencas > .container{
+    max-width: 800px;
+}
+
+.items01 > span {
+    font-size: 20px;
+    margin-bottom: 35px;
+}
+
+.diferencas__single{
+    float: left;
+    width: 50%;
+    text-align: center;
+    color: rgb(193, 193, 193);
+}
+
+.diferencas__single2{
+    float: left;
+    width: 50%;
+    text-align: center;
+    color: rgb(109, 206, 238);
+}
+
+.diferencas__single h1{
+    color: rgb(0, 0, 0);
+    margin-bottom: 25px;
+}
+
+
+.diferencas__single2 h1{
+    color: rgb(3, 100, 133);
+    margin-bottom: 25px;
+}
+
+
+/*footer*/
+.rodape{
+    width: 100%;
+    height: 800px;
+    background-image: url(../imagens/bg.png);
+    transform: rotate(180deg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0px -200px;
+    position: relative;
+}
+.logo_rodape{
+    position: absolute;
+    background-image: url(../imagens/logo_vertical.png);
+    width: 200px;
+    height: 200px;
+    top: 100px;
+    left: 250px;
+    transform: rotate(180deg);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Media querries*/
+@media screen and (max-width: 768px){
+    .container-header{
+        width: 100%;
+    }
+    .one{
+        text-align: center;
+        padding: 50px;
+        min-width: 100%;
+    }
+    .two {
+        display: none;
+    }
+    nav{
+        display: none;
+    }
+    .one form input[type="email"]{
+        border: 1px solid rgb(109, 206, 238);
+        background-color: rgb(109, 206, 238);
+        width: 70%;
+    }
+    .tel span{
+        display: none;
+    }
+    section.diferenciais > .container{
+        display: block;
+    }
+    section.diferenciais > h2{
+        background-image: linear-gradient(white,rgba(109, 206, 238, 0.548));
+        padding: 15px;
+        font-size: 2em;
+    }
+    .sobre{
+        width: 100%;
+    }
+    .sobre2 h2{
+        text-align: center;
+    }
+    .sobre2{
+        text-align: center;
+        padding: 25px;
+        width: 100%;
+    }
+    section.depoimento h2{
+        font-size: 1.5em;
+    }
+    section.depoimento p{
+        font-size: 14px;
+    }
+    .container_left{
+        width: 100%;
+    }
+    .container_right{
+        width: 100%;
+    }
+    .circle{
+        margin-left: 10px;
+        margin-bottom: 5px;
+    }
+    .etapas__single > div{
+        margin-left: 10px;
+    }
+    .etapas__single > p{
+        display: none;
+    }
+    .description{
+        width: calc(100% - 110px);
+    }
+    .line{
+        position: absolute;
+        bottom: -50px;
+        right: calc(50% - 3px);
+        width: 5px;
+        height: 50px;
+        background-color:rgb(109, 206, 238);
+    }
